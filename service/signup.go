@@ -7,6 +7,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 	"itish.github.io/dreamnote/initializers"
 	"itish.github.io/dreamnote/models"
+	"gorm.io/gorm"
 )
 
 func CreateUser(user *models.User) error {
