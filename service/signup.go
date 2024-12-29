@@ -17,6 +17,7 @@ func CreateUser(user *models.User) error {
 		log.Println("User might already exist...")
 		return fmt.Errorf("user might already exits")
 	}
+	log.Println("User is to be created...")
 
 	// Hash the password
 	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
@@ -24,6 +25,7 @@ func CreateUser(user *models.User) error {
 		log.Println("Failed to hash password:", err)
 		return err
 	}
+	log.Println("Password is hashed...")
 	user.Password = string(hashedPassword) // Replace plaintext password with hashed version
 
 	if err := initializers.DB.Create(user).Error; err != nil { // creating user check in supabase
