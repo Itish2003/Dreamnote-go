@@ -1,0 +1,13 @@
+[GIN-debug] GET    /v1/                      --> itish.github.io/dreamnote/route.Route.func1 (3 handlers)
+[GIN-debug] POST   /v1/getDetails            --> itish.github.io/dreamnote/controller.GetUser (3 handlers)
+[GIN-debug] POST   /v1/signup                --> itish.github.io/dreamnote/controller.SignUp (3 handlers)
+[GIN-debug] POST   /v1/login                 --> itish.github.io/dreamnote/controller.Login (3 handlers)
+[GIN-debug] PUT    /v1/update                --> itish.github.io/dreamnote/controller.Update (3 handlers)
+[GIN-debug] POST   /v1/uploadImage           --> itish.github.io/dreamnote/controller.UploadImage (3 handlers)
+[GIN-debug] POST   /v1/getBlogs              --> itish.github.io/dreamnote/controller.GetBlogs (3 handlers)
+[GIN-debug] POST   /v1/updateBlog            --> itish.github.io/dreamnote/controller.UpdateBlogs (3 handlers)
+[GIN-debug] POST   /v1/deleteBlog            --> itish.github.io/dreamnote/controller.DeleteBlogs (3 handlers)
+[GIN-debug] POST   /v1/createBlog            --> itish.github.io/dreamnote/controller.CreateBlogs (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
