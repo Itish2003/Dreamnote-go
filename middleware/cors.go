@@ -8,7 +8,7 @@ func CORSMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		// Set allowed origins (your frontend services)
 		allowedOrigins := []string{
-			"",                      // Production React frontend
+			"https://dreamnote-react.onrender.com",                      // Production React frontend
 			"http://localhost:5173", // Local React development
 		}
 
