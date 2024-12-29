@@ -13,10 +13,11 @@ func CreateUser(user *models.User) error {
 	var existingUser models.User
 	result := initializers.DB.Where("email=?", user.Email).First(&existingUser)
 
-	if result.Error == nil {
-		log.Println("User might already exist...")
-		return fmt.Errorf("user might already exits")
+	if result.Error != gorm.ErrRecordNotFound {
+    		log.Println("User might already exist...")
+   		return fmt.Errorf("user might already exist")
 	}
+
 	log.Println("User is to be created...")
 
 	// Hash the password
